@@ -1,0 +1,49 @@
+﻿<Page x:Class="School.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:School"
+      mc:Ignorable="d"
+      d:DesignHeight="680"
+      d:DesignWidth="1200"
+      Background="{StaticResource MainColor}"
+      Title="AuthorizationPage">
+    <Grid>
+        <Button Style="{StaticResource HeadPanel}" />
+        <Border Background="{StaticResource ComplementaryColor}"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Padding="50"
+                CornerRadius="15">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="ВХОД"
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"
+                           FontFamily="{StaticResource ComicSansMSFont}"
+                           FontSize="40"
+                           Foreground="{StaticResource AccentColor}" />
+                <Button Content="клиент"
+                        FontSize="25"
+                        Background="{StaticResource MainColor}"
+                        Foreground="{StaticResource AccentColor}"
+                        BorderBrush="{StaticResource AccentColor}"
+                        FontWeight="Medium"
+                        Click="GoToClientPage"
+                        Margin="0, 25"
+                        Height="60"
+                        Width="250" />
+                <Button Content="администратор"
+                        Width="250"
+                        Height="60"
+                        FontSize="25"
+                        FontWeight="Medium"
+                        Background="{StaticResource MainColor}"
+                        Foreground="{StaticResource AccentColor}"
+                        BorderBrush="{StaticResource AccentColor}"
+                        Click="GoToAdminPage" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
